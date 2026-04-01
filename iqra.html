@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iqra Aslam | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            animation: bgChange 5s infinite;
+        }
+
+        /* Background Animation */
+        @keyframes bgChange {
+            0%   { background: #667eea; }
+            25%  { background: #ff7eb3; }
+            50%  { background: #43cea2; }
+            75%  { background: #f7971e; }
+            100% { background: #667eea; }
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background: rgba(0,0,0,0.2);
+        }
+
+        nav h1 {
+            font-size: 24px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 50px;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero-text h2 {
+            font-size: 40px;
+        }
+
+        .hero-text p {
+            margin: 15px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #000;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #333;
+        }
+
+        /* Square Image */
+        .hero-img img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 5px solid white;
+        }
+
+        /* Sections */
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill-box {
+            background: white;
+            color: black;
+            margin: 10px;
+            padding: 15px 25px;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .skill-box:hover {
+            transform: scale(1.1);
+        }
+
+        /* Contact */
+        .contact p {
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.3);
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                margin-top: 10px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>Iqra Aslam</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Hello, I'm Iqra 👋</h2>
+            <p>A passionate web developer creating modern and responsive websites.</p>
+            <button>Hire Me</button>
+        </div>
+
+        <div class="hero-img">
+            <img src="profile.jpg" alt="Profile Picture">
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am a student passionate about web development. I love creating beautiful and functional websites.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section skills">
+        <h2>My Skills</h2>
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">ASP.NET</div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <p>Email: iqraa6296@email.com</p>
+        <p>Phone: 0347-8022530/p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Iqra Aslam | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
